@@ -5,3 +5,4 @@ $app->initLayout('Centered');
 $button = $app->add('Button');
 $button->set('button');
 $button->icon = 'plus';
+$button->link('https://www.youtube.com/');
