@@ -19,7 +19,7 @@ $button3 -> addClass('standart yellow');
 $button1 ->link('r1.txt');
 
 $button4 = $app ->add('Button');
-$button4 -> set('Button2');
+$button4 -> set('Button4');
 $button4 -> addClass('massive grey');
 
 $button2 ->link(['1']);
