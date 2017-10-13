@@ -21,5 +21,4 @@ for ($L = 1; $L <= 9; $L++) {
 $c = $_GET['kk'];
 $button = $app -> add('Button');
 $button -> set($c);
-
-$text = $app ->add (['Text', $c]);
+$button ->addClass('massive red');
