@@ -22,4 +22,4 @@ $c = GET['kk'];
 $button = $app -> add('Button');
 $button -> set($c);
 
-$text = $app ->(['Text', $c]);
+$text = $app ->add (['Text', $c]);
