@@ -22,4 +22,4 @@ $button4 = $app ->add('Button');
 $button4 -> set('Button4');
 $button4 -> addClass('big grey');
 
-$button2 ->link(['1', 'kk' =>247, 'bb'=>'Detected']);
+$button2 ->link(['1', 'kk' =>248, 'bb'=>'Detected']);
