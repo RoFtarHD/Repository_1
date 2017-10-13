@@ -22,4 +22,4 @@ $c = $_GET['kk'];
 $button = $app -> add('Button');
 $button -> set($c);
 
-$text = $app ->add (['Text', $_GET['kk']);
+$text = $app ->add (['Text', $c]);
