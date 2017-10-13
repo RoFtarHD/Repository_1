@@ -11,8 +11,15 @@ $button2 = $app ->add('Button');
 $button2 -> set('Button2');
 $button2 -> addClass('massive blue');
 
+
 $button3 = $app ->add('Button');
 $button3 -> set('Button3');
-$button3 -> addClass('big yellow');
+$button3 -> addClass('standart yellow');
 
 $button1 ->link('r1.txt');
+
+$button4 = $app ->add('Button');
+$button4 -> set('Button2');
+$button4 -> addClass('massive grey');
+
+$button2 ->link(['1']);
