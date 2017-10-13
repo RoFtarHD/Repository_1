@@ -6,7 +6,7 @@ $app->initLayout('Centered');
 $button->set('button');
 $button->icon = 'plus';
 $button->link('https://www.youtube.com/');
-$button->set(['primary'=> true]);*/
+$button->set(['primary'=> true]);
 $name = 2;
 for ($L = 1; $L <= 9; $L++) {
   $button = $app->add('Button');
@@ -16,6 +16,8 @@ for ($L = 1; $L <= 9; $L++) {
     $button->set(['primary'=> true]);
 
   }
-}
+}*/
 
 $c = GET['kk'];
+$button = $app -> add('Button');
+$button -> set($c);
