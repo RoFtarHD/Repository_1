@@ -20,6 +20,6 @@ for ($L = 1; $L <= 9; $L++) {
 
 $c = GET['kk'];
 $button = $app -> add('Button');
-$button -> set($c);
+$button -> set(''.$c);
 
-$text = $app ->add (['Text', $c]);
+$text = $app ->add (['Text', ''.$c]);
