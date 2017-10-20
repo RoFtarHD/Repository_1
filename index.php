@@ -1,23 +1,35 @@
 <?php
 require 'vendor/autoload.php';
-$app = new \atk4\ui\App('Lol');
+$app = new \atk4\ui\App('Registration');
 $app->initLayout('Centered');
 
-$button1 = $app ->add('Button');
-$button1 -> set('1');
-$button1 -> addClass('mini red');
-
-$button2 = $app ->add('Button');
-$button2 -> set('2');
-$button2 -> addClass('massive blue');
 
 
-$button3 = $app ->add('Button');
-$button3 -> set('3');
-$button3 -> addClass('standart yellow');
 
-$button1 ->link(['1', 'kk' => '1']);
 
-$button2 ->link(['1', 'kk' => '2']);
+if(isset ($_GET['min'])){
+  $min = $_GET['min'];
+  $max = $_GET['max'];
+  $number = round(($min + $max)/2);
+  $label = $app->add(['Label', $number]);
+  if(isset ($_GET['greater'])){
+    $min = $number;
+  }
+  if(isset ($_GET['less'])){
+    $max = $number;
+  }
 
-$button3 ->link(['1', 'kk' => '3']);
+}else{
+    $label = $app->add(['Label', 'Выбери число между 1 и 100']);
+  $min = 1;
+  $max = 100;
+}
+
+
+$button1 = $app->add(['Button', 'Less']);
+$button1 -> link(['index', 'min'=> $min, 'max' => $max, 'less' => TRUE]);
+
+$button2 = $app->add(['Button', 'greater']);
+$button2 -> link(['index', 'min'=> $min, 'max' => $max, 'greater' => TRUE]);
+
+$button3 = $app->add(['Button', 'It is my number']);
